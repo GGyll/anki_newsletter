@@ -85,11 +85,10 @@ The program communicates with your Anki desktop application via an add-on called
 1.  **Clone the Repository:**
 
     ```bash
-    git clone [https://github.com/your-github-username/anki-newsletter.git](https://github.com/your-github-username/anki-newsletter.git)
+    git clone [https://github.com/GGyll/anki-newsletter.git](https://github.com/GGyll/anki-newsletter.git)
     cd anki-newsletter
     ```
 
-    _(Remember to replace `your-github-username` with your actual GitHub username and `anki-newsletter` with your repo name)_
 
 2.  **Create a Virtual Environment (Recommended):**
 
