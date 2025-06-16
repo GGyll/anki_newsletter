@@ -4,6 +4,8 @@
 
 Automate your language learning with AI-generated short stories based on your Anki "struggle cards," delivered directly to your inbox!
 
+If this program proves useful, please consider giving the repository a star! ✨
+
 ## Table of Contents
 
 - [About the Program](#about-the-program)
@@ -14,6 +16,8 @@ Automate your language learning with AI-generated short stories based on your An
   - [AnkiConnect Setup (Crucial!)](#ankiconnect-setup-crucial)
   - [Installation](#installation)
   - [Configuration](#configuration)
+    - [OpenRouter API Key](#openrouter-api-key)
+    - [Mailjet API Keys](#mailjet-api-keys)
 - [How to Run](#how-to-run)
 - [Usage](#usage)
 - [Contribution](#contribution)
@@ -132,17 +136,28 @@ The program communicates with your Anki desktop application via an add-on called
     # Choose one of: gpt-3.5-turbo, deepseek/deepseek-r1:free, google/gemini-2.0-flash-001, google/gemini-2.5-pro-preview
     LLM_MODEL_TO_USE=deepseek/deepseek-r1:free # Or your preferred model
 
-    # If using models from OpenRouter (Deepseek, Gemini, etc.)
+    # --- LLM API Key Setup ---
+
+    ### OpenRouter API Key
+    # You will need an OpenRouter API key.
+    # 1. Go to OpenRouter.ai: [https://openrouter.ai/](https://openrouter.ai/)
+    # 2. Sign up or log in.
+    # 3. Navigate to your "Keys" or "API Keys" section.
+    # 4. Create a new API key.
+    # 5. Paste it here:
     OPENROUTER_API_KEY=sk-or-v1-YOUR_OPENROUTER_API_KEY # Replace with your OpenRouter API Key
-    # OPENROUTER_BASE_URL=[https://openrouter.ai/api/v1](https://openrouter.ai/api/v1) # Default, uncomment if you need to override
+    # OPENROUTER_BASE_URL=https://openrouter.ai/api/v1 # Default, uncomment if you need to override
 
-    # If using OpenAI native API (only if LLM_MODEL_TO_USE is gpt-3.5-turbo)
-    # OPENAI_API_KEY=sk-YOUR_OPENAI_API_KEY # Replace with your OpenAI API Key
-
-    # Mailjet
+    # --- Mailjet API Keys ---
+    # Mailjet is used for sending the email newsletters. We use the free plan for this
+    # 1. Go to Mailjet.com: [https://www.mailjet.com/](https://www.mailjet.com/)
+    # 2. Sign up or log in.
+    # 3. Navigate to your "API Key Management" or "REST API" section (often found under Account -> My API Key).
+    # 4. You will find your Public API Key and Secret Key.
+    # 5. Paste them here:
     MAILJET_API_KEY_PUBLIC=YOUR_MAILJET_PUBLIC_KEY # Replace with your Mailjet Public API Key
     MAILJET_API_KEY_PRIVATE=YOUR_MAILJET_PRIVATE_KEY # Replace with your Mailjet Private API Key
-    MAILJET_SENDER_EMAIL=your_verified_sender@example.com # Crucial: Must be a verified sender email in Mailjet
+    MAILJET_SENDER_EMAIL=your_verified_sender@example.com # Crucial: This email MUST be verified in your Mailjet account!
     ```
 
 ## How to Run

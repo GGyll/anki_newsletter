@@ -92,6 +92,8 @@ def run_newsletter_generation(
 if __name__ == "__main__":
     # --- Example Usage ---
     # Customize these parameters
+
+    # Name of your deck in Anki
     TARGET_DECK = "My portuguese"
     RECIPIENT_EMAIL = RECIPIENT_EMAIL
     TARGET_LANGUAGE = "Portuguese"
