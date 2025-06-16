@@ -85,7 +85,7 @@ The program communicates with your Anki desktop application via an add-on called
 1.  **Clone the Repository:**
 
     ```bash
-    git clone [https://github.com/GGyll/anki-newsletter.git](https://github.com/GGyll/anki-newsletter.git)
+    git clone https://github.com/GGyll/anki-newsletter.git
     cd anki-newsletter
     ```
 
@@ -100,16 +100,6 @@ The program communicates with your Anki desktop application via an add-on called
 3.  **Install Dependencies:**
     ```bash
     pip install -r requirements.txt
-    ```
-    _(You'll need to generate a `requirements.txt` from your `pyproject.toml` or `poetry.lock` if you're using Poetry, or create one manually based on the libraries listed in "Technologies Used" section.)_
-    Example `requirements.txt`:
-    ```
-    requests
-    openai
-    mailjet-rest
-    beautifulsoup4
-    python-dotenv
-    # replicate (only if you re-enable image generation in config)
     ```
 
 ### Configuration
